@@ -1,0 +1,8 @@
+# npm publish / pnpm tarball 安装（packlist 语义，无 files 字段时生效）
+# 保留：lib/、cordis.patch.yml、README.md、LICENSE、package.json
+# 注意：不要加回 package.json 的 files 字段——pnpm packlist 会把 files 列表内的
+# main 文件压扁到包根（main 失效）；用本文件 + .gitattributes 控制发布内容。
+test/**
+plugin-body.js
+scripts/**
+.gitattributes

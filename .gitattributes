@@ -1,0 +1,6 @@
+# git archive（codeload tarball）导出控制：`dsh plugin add github:<user>/<repo>`
+# 走 codeload tarball，安装包只保留运行时所需；开发/动态形态文件不进安装包。
+# 注意：cordis.patch.yml 是 bundle 挂载声明，绝不能 export-ignore。
+test/**          export-ignore
+plugin-body.js   export-ignore
+scripts/**       export-ignore

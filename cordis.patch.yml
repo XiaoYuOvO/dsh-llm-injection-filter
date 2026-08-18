@@ -1,0 +1,5 @@
+# dsh-llm-injection-filter bundle：向 web profile 组合挂载 LLM 响应流注入过滤器（Host half）。
+# 行 id 与包名一致；插件只监听 llm/stream waterfall（不发布服务），host 平面直接插入即可。
+- insert:
+    - id: llm-injection-filter
+      name: dsh-llm-injection-filter

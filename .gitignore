@@ -1,0 +1,5 @@
+# 依赖与构建产物（本包无构建，防御性保留）
+node_modules/
+*.tgz
+*.log
+.DS_Store
